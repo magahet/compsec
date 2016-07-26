@@ -1,0 +1,10 @@
+Target 1: XSRF \
+The vulnerable code is in account.php:24 \
+because it displays the expected response, which can then be used in the form submission. \
+
+
+Target 2: XSS-password theft \
+The vulnerable code is in index.php:29 \
+because it sends unvalidated user input back to the client browser, which can then be used to inject malicious code. \
+
+
