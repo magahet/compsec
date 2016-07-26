@@ -1,10 +1,17 @@
+Project 4: Web Security \
+Magahet Mendiola \
+
+
 Target 1: XSRF \
 The vulnerable code is in account.php:24 \
-because it displays the expected response, which can then be used in the form submission. \
+because it displays the expected response, which can be used in the form submission. \
 
 
 Target 2: XSS-password theft \
 The vulnerable code is in index.php:29 \
-because it sends unvalidated user input back to the client browser, which can then be used to inject malicious code. \
+because it sends unvalidated user input back to the client browser, which can be used to inject malicious code. \
 
 
+Target 3: SQL Injection \
+The vulnerable code is in auth.php:52 \
+because it uses the non-escaped form of the username in the SQL query, which can be used to comment out the password checking component of the query. \
